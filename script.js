@@ -7,14 +7,14 @@ let count = 0;
 let counterInterval;
 
 function updateCounter() {
-  if (count > 1000) {
+  if (count > 999) {
     clearInterval(counterInterval);
     return;
   }
 
   count++;
   counterElement.textContent = count.toString();
-  counter2Element.textContent = `${count.toString()}+`;
+  counter2Element.textContent = `${count.toString()}m²`;
 }
 
 counterInterval = setInterval(updateCounter, 1);
@@ -25,7 +25,7 @@ counterInterval = setInterval(updateCounter, 1);
 
 const toggle = document.getElementById("toggleDark");
 const body = document.querySelector("body");
-const test = document.querySelector("item-text");
+
 
 toggle.addEventListener("click", function () {
   this.classList.toggle("bi-moon");

@@ -1,13 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100&display=swap");
-body {
-  font-family: "Be Vietnam Pro", sans-serif;
-}
+
 :root {
   --text-color: #ffffff;
   --background-primary: #204ea5;
   --background-pink: #eb4969;
   --boder-color: #d7dee9;
   --text-dark: #353455;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+/* Css-reset */
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+label,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+i {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 15px;
 }
 
 /* global rounded */
@@ -63,46 +106,6 @@ body {
   border: 3px dashed var(--boder-color);
   border-radius: 100%;
 }
-
-/* Css-reset */
-html {
-  box-sizing: border-box;
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-input,
-textarea,
-select,
-button {
-  outline: none;
-}
-label,
-button {
-  cursor: pointer;
-}
-a {
-  text-decoration: none;
-}
-img {
-  display: block;
-  max-width: 100%;
-}
-i {
-  font-size: 50px;
-  cursor: pointer;
-}
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 80px 15px;
-}
 .content .content-title {
   display: flex;
   align-items: center;
@@ -144,6 +147,8 @@ i {
   font-weight: 500;
   padding-bottom: 50px;
 }
+
+/* ////////// */
 
 .main {
   margin-top: 50px;
@@ -228,14 +233,7 @@ i {
     flex-direction: column;
     gap: 0;
   }
-  .menu .menu-text {
-    width: 382px;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: calc(34 / 24);
-    color: var(--background-primary);
-    margin-bottom: 24px;
-  }
+  
   .content-title {
     flex-direction: column;
     gap: 10px;
@@ -278,5 +276,13 @@ i {
   .main-item .item-dot-3 {
     position: relative;
     left: 20px;
+  }
+  .menu .menu-text {
+    width: 382px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: calc(34 / 24);
+    color: var(--background-primary);
+    margin-bottom: 24px;
   }
 }
